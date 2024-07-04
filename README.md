@@ -27,3 +27,8 @@ A value is anything we can assign to a variable
 
 Examples of Types
 string, number, boolean, Date, Object
+
+In the worlds of type script we have two sets of types
+
+1. Primitive Types -> number, boolean, void, undefined, string, symbol, null
+2. Object Types -> functions, arrays, classes, objects
