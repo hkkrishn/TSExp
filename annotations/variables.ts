@@ -43,6 +43,14 @@ const color  = 'blue'
 let meow = 'cat';
 // when do we add type annotations
 // 1. When we declare a variable on one line and initialize later
+let words:string [] = ['red','green','blue']
+let foundWord:boolean = false;
+for(let i:number = 0; i<words.length;i++){
+  if(words[i] === 'green'){
+    foundWord = true;
+  };
+};
+
 // 2. When we want to have a variable to have a type that cant be inferred
 
 
