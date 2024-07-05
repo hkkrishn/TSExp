@@ -52,9 +52,17 @@ for(let i:number = 0; i<words.length;i++){
 };
 
 // 2. When we want to have a variable to have a type that cant be inferred
+let numbers:number [] = [-10,-1,12];
+let numberAboveZero:boolean | number = false;
+for(let i:number = 0;i<numbers.length;i++){
+  if(numbers[i] > 0){
+    numberAboveZero = numbers[i];
+  }
+};
 
 
-// 1. When a function returns the any type and we need to clarify the value
+
+// 3. When a function returns the any type and we need to clarify the value
  const json = `{
 "x": 10,
 "y":20
