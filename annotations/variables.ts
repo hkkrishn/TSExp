@@ -44,5 +44,23 @@ let meow = 'cat';
 // when do we add type annotations
 // 1. When we declare a variable on one line and initialize later
 // 2. When we want to have a variable to have a type that cant be inferred
-// 3. When a function returns the any type and we need to clarify the value
+
+
+// 1. When a function returns the any type and we need to clarify the value
+ const json = `{
+"x": 10,
+"y":20
+}`
+
+const coordinates: {x:number; y:number}  = JSON.parse(json);
+console.log(coordinates)
+// If you ever  call JSON.parse you will get the any type back
+
+// The any type
+// It is a type just as a string or number
+// Means TS has no idea what it is cant check for correct property references
+// AVOID VARIABLE WITH ANY AT ALL COSTS
+
+
+
 
